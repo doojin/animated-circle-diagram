@@ -3,7 +3,9 @@ const transitionDuration = 900;
 
 displays.forEach(display => {
     const note = parseFloat(display.dataset.note);
+
     strokeTransition(display, note);
+    incrementNumber(display, note);
 });
 
 function strokeTransition(display, note) {
@@ -16,4 +18,26 @@ function strokeTransition(display, note) {
     progress.style.setProperty('--initialStroke', circumference);
 
     setTimeout(() => progress.style.strokeDashoffset = offset, 100);
+}
+
+function incrementNumber(display, number) {
+    const iterations = 30;
+    const interval = transitionDuration / iterations;
+    const incrementStep = number / iterations;
+
+    let counter = 0;
+
+    const incrementInterval = setInterval(() => {
+        counter += incrementStep;
+
+        if (counter >= number) {
+            counter = number;
+            window.clearInterval(incrementInterval);
+        }
+
+        const [ integer, decimal ] = counter.toFixed(2).toString().split('.');
+
+        display.querySelector('.percent__integer').textContent = `${integer}.`;
+        display.querySelector('.percent__decimal').textContent = decimal;
+    }, interval);
 }
