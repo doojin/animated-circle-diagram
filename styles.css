@@ -29,7 +29,6 @@ body {
 .circle__progress {
     fill: none;
     stroke-opacity: .3;
-    stroke-width: 3;
 }
 
 .note-display:nth-child(1) .circle__progress {
@@ -76,13 +75,18 @@ body {
     text-transform: uppercase;
 }
 
+.circle__progress--path {
+    stroke-width: 10;
+}
+
 .circle__progress--fill {
     --initialStroke: 0;
     --transitionDuration: 0;
 
-    stroke-opacity: 1;
+    stroke-opacity: .75;
     stroke-dasharray: var(--initialStroke);
     stroke-dashoffset: var(--initialStroke);
+    stroke-width: 4;
     transition: stroke-dashoffset var(--transitionDuration) ease;
 }
 
