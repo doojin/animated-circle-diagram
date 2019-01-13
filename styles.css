@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Nixie+One|Raleway:200');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #3E423A;
+    color: #fff;
+    display: flex;
+    font-family: 'Nixie One', cursive;
+    height: 100vh;
+}
+
+.display-container {
+    display: flex;
+    margin: auto;
+}
+
+.note-display {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 25px;
+}
+
+.circle__progress {
+    fill: none;
+    stroke-opacity: .3;
+    stroke-width: 3;
+}
+
+.note-display:nth-child(1) .circle__progress {
+    stroke: #AAFF00;
+}
+
+.note-display:nth-child(2) .circle__progress {
+    stroke: #FF00AA;
+}
+
+.note-display:nth-child(3) .circle__progress {
+    stroke: #AA00FF;
+}
+
+.note-display:nth-child(4) .circle__progress {
+    stroke: #00AAFF;
+}
+
+.circle {
+    position: relative;
+}
+
+.percent {
+    font-weight: bold;
+    left: 50%;
+    line-height: 28px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.percent__integer {
+    font-size: 28px;
+}
+
+.percent__decimal {
+    font-size: 12px;
+}
+
+.label {
+    font-family: 'Raleway', serif;
+    font-size: 14px;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
