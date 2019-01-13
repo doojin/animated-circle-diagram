@@ -75,3 +75,13 @@ body {
     margin-top: 15px;
     text-transform: uppercase;
 }
+
+.circle__progress--fill {
+    --initialStroke: 0;
+    --transitionDuration: 0;
+
+    stroke-opacity: 1;
+    stroke-dasharray: var(--initialStroke);
+    stroke-dashoffset: var(--initialStroke);
+    transition: stroke-dashoffset var(--transitionDuration) ease;
+}
