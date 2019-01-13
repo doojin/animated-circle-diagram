@@ -1,5 +1,5 @@
-# animated-circle-diagram
+# Animated circle diagram
 
-![alt text](https://doojin.github.io/animated-circle-diagram/screenshot.png "Screenshot")
+<center>![alt text](https://doojin.github.io/animated-circle-diagram/screenshot.png "Screenshot")</center>
 
-[https://doojin.github.io/animated-circle-diagram/](https://doojin.github.io/animated-circle-diagram/)
+<center>[https://doojin.github.io/animated-circle-diagram/](https://doojin.github.io/animated-circle-diagram/)</center>
