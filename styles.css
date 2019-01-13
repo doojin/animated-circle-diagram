@@ -87,5 +87,5 @@ body {
 }
 
 .circle__svg {
-    transform: rotate(-90deg);
+    transform: rotate(-90deg) scale(1, -1);
 }
